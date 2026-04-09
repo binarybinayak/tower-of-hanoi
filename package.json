@@ -1,0 +1,8 @@
+{
+  "name": "tower-of-hanoi",
+  "version": "1.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {}
+}
