@@ -6,12 +6,11 @@ import { setStringPrototypes } from "./utils/stringMethods.ts"
 setStringPrototypes();
 
 async function runWatcher() {
-	const dirname = join(__dirname, "../");
 	
 	spawn("npm run start:server", { cwd: dirname, stdio: "inherit", shell: true });
 
 
-	const watcher = watch(dirname, { recursive: true });
+	const watcher = watch(process.cwd(), { recursive: true });
 	
 	for await (const { eventType, filename} of watcher) {
 		if(filename.endsWith(".js")) continue;

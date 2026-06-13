@@ -3,7 +3,7 @@
   "version": "1.0",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc &&node dist/watcher.js",
+    "dev": "tsc && node dist/watcher.js",
     "start:server": "node dist/server.js"
   },
   "devDependencies": {
