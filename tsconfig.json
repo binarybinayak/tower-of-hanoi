@@ -1,4 +1,8 @@
 {
-  "compilerOptions": {},
-  "include": ["./src/*.ts"]
-}
+  "compilerOptions": {
+    "types": ["node"],
+    "outDir": "./dist",
+   "rewriteRelativeImportExtensions": true,
+  },
+  "include": ["./src/*.ts"],
+  }

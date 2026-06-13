@@ -2,7 +2,11 @@
   "name": "tower-of-hanoi",
   "version": "1.0",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsc &&node dist/watcher.js",
+    "start:server": "node dist/server.js"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "@types/node": "^25.6.0"
+  }
 }
